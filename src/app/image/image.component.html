@@ -1,0 +1,7 @@
+<div class='picture-frame' *ngIf="image">
+  <a *ngIf="image.link" [href]="image.link">
+    <app-image-tag [image]="image"></app-image-tag>
+  </a>
+  <app-image-tag *ngIf="!image.link" [image]="image"></app-image-tag>
+  <p *ngIf="image.caption" [innerHtml]="image.caption"></p>
+</div>

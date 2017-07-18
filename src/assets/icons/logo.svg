@@ -1,0 +1,11 @@
+<svg width='63' height='63' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'>
+<g>
+  <rect id='svg_1' height='44' width='51' fill='#cc5521' x='6'/>
+  <polygon id='svg_2' points='6.164,44 31.542,62.852 56.92,44 ' fill='#cc5521'/>
+  <polyline id='svg_3' points='31,4 53,4 53,41.477 31.486,57.18 ' fill='#ffa71a'/>
+  <polygon id='svg_4' points='48.74,20.896 52.57,17.735 41.693,9 21.391,9 10,17.548 10,35.676 31.5,52.353 53,36.4 53,28 31,28   31,34 48.219,34 31.746,45.714 16,32.775 16,20.449 23.566,14 39.519,14 ' fill='#ebecee'/>
+  <polyline id='svg_5' points='31,63 31,57.429 6,38.305 6,44 ' fill='#ffa71a'/>
+  <polygon id='svg_6' points='31,14 31,9 41.693,9 52.57,17.715 48.74,20.934 39.519,14 ' fill='#ffffff'/>
+  <polyline id='svg_7' points='31,28 31,34 48.219,34 31,45.827 31,52.353 53,36.4 53,28 ' fill='#ffffff'/>
+ </g>
+</svg>

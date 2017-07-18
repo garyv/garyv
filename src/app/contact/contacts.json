@@ -1,0 +1,35 @@
+{
+  "contacts": 
+    [
+      {
+        "title": "Email",
+        "address": "mailto:garyv.developer@gmail.com",
+        "icon": "paper-plane fa-2x",
+        "text": "garyv.developer@gmail.com"
+      },
+      {
+        "title": "Github",
+        "address": "https://github.com/garyv/",
+        "icon": "github fa-2x",
+        "text": "github.com/garyv"
+      },
+      {
+        "title": "LinkedIn",
+        "address": "https://www.linkedin.com/in/garyvonschilling",
+        "icon": "linkedin fa-2x",
+        "text": "linkedin.com/in/garyvonschilling"
+      },
+      {
+        "title": "Resume",
+        "address": "http://garyv.space/garyv_resume.pdf",
+        "icon": "file-text fa-2x",
+        "text": "garyv_resume.pdf"
+      },
+      {
+        "title": "Stack Overflow",
+        "address": "http://stackoverflow.com/users/1812972/garyv",
+        "icon": "flag fa-2x",
+        "text": "stackoverflow.com/users/1812972/garyv"
+      }
+    ]
+}

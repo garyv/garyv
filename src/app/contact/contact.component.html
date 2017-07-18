@@ -1,0 +1,9 @@
+<div class='fade-in'>
+  <div class='row'>
+    <div *ngFor="let link of contacts" class='contact grid-4'>
+      <div class='medium-padding'>
+        <app-link [link]="link"></app-link>
+      </div>
+    </div>
+  </div>
+</div>

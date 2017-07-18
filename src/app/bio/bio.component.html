@@ -1,0 +1,20 @@
+<div class='row' *ngIf="bio">
+  <div class='grid-8 right'>
+    
+    <div class='summary small-spacing' 
+         [innerHtml]='bio?.text'></div>
+  
+  </div>
+  <div class='grid-4'>
+    <div class='small-spacing fade-in'>
+      
+      <app-image [image]="bio.image"></app-image>
+
+      <app-link *ngFor="let link of bio.buttons" 
+                [link]="link"></app-link>
+      
+      <app-image [image]="bio.asideImage" class='aside-image'></app-image>
+    
+    </div>
+  </div>
+</div>

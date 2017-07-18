@@ -1,0 +1,52 @@
+@import '../sass-variables.scss';
+
+a {
+  color: $main-color;
+  float: left;
+  line-height: 40px;
+  padding: 10px 15px;
+  text-decoration: none;
+  
+  transition: all $transition-time $transition-type;
+}
+
+h1 {
+  margin: 0;
+} 
+
+  h1 a:hover {
+    color: $logo-color;
+  }
+
+header {
+  padding: $medium-space;
+  margin-bottom: $medium-space;
+}
+
+nav {
+  float: right;
+  margin-left: $medium-space;
+  user-select: none;
+
+  a {
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 1px 1px 4px 4px;
+  }
+
+  @for $i from 1 through 3 { 
+    $nav-color: nth($nav-colors, $i);
+    $nav-color-dark: darken($nav-color, 45%);
+
+    a:nth-child(#{$i}) {
+      &.active {
+        background: $nav-color-dark;
+        cursor: default;
+      }
+      &:hover, 
+      &.active {
+        border-bottom: 3px solid $nav-color;
+      }
+    }
+  }
+}

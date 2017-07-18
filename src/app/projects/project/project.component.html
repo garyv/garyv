@@ -1,0 +1,23 @@
+<div class='fade-in-delay'>
+  <app-projects [skipFade]="true"></app-projects>
+</div>
+
+<div class='modal-background fade-in'>
+  <b class='background dark-overlay'></b>
+
+  <article class='project modal' *ngIf="project">
+    <a class='close' routerLink='/work'> X </a>
+
+    <h1>{{project.title}}</h1>
+
+    <img *ngIf="project.image" alt="" class='fade-in-delay'
+         [src]="project.image.src"
+         [srcset]="project.image.srcset" />
+    
+    <div class='project-link'>
+      <a [href]="project.link.address">{{project.link.text}}</a>
+    </div>
+
+    <div class='description' [innerHTML]="project.text"></div>
+  </article>
+</div>

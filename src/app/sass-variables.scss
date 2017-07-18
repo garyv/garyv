@@ -1,0 +1,31 @@
+// colors 
+$background-color: black;
+$main-color: white;
+$link-color: #388285;
+$link-color-active: #00aecc;
+$logo-color: #fbd283;
+$nav-colors: #fe9c53, #f76242, #f02d35;
+
+// fonts
+$heading-font: "Raleway", sans-serif;
+$main-font: lucida grande regular, lucida sans unicode, sans-serif;
+
+// general sizes 
+$small-space: 5px;
+$medium-space: 10px;
+$big-space: 20px;
+
+// font sizes
+$base-font-size: 16px;
+$main-font-size: (16px / $base-font-size) * 1em;  // 16px = 1em
+$small-font-size: (14px / $base-font-size) * 1em; // 14px = 0.875em
+$big-font-size: (18px / $base-font-size) * 1em;   // 18px = 1.125em
+$line-height: 1.5 * $base-font-size;              // 24px = 1.5em
+
+// screen sizes
+$middle-break-point: 600px / $base-font-size * 1em;  // 600px = 37.5em
+$big-break-point: 980px / $base-font-size * 1em;     // 980px = 61.25em
+
+// transitions
+$transition-time: 0.2s;
+$transition-type: ease-out;

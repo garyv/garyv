@@ -1,0 +1,40 @@
+<div class='big-margin-bottom'>
+  <h3>Technology used:</h3>
+  <ul class='tags row'>
+    <li *ngFor="let tag of projectTags.tags" 
+        class="col tag" [class.active]="projectTags.isActive(tag)" 
+        (click)="toggleTag(tag)">
+      {{tag}} 
+      <i [class.fa]="true" 
+         [class.fa-check]="projectTags.isActive(tag)"
+         [class.fa-minus-circle]="!projectTags.isActive(tag)"></i>
+    </li>
+  </ul>
+</div>
+
+<div class='row' [class.fade-in]="!skipFade">
+  <div *ngIf="!projectTags.activeProjects.length">
+    <h4>
+      Click a tag above to see projects
+      <i class='fa fa-level-up'></i>
+    </h4>
+  </div>
+  <div *ngFor="let project of projectTags.activeProjects"
+       class='col project grid-4 half big-margin-bottom medium-padding' 
+       [class.active]="project.active" [class.hidden]="!project.active">
+    <h4>
+      <a [routerLink]="[project.friendlyId]">{{project.title}}</a>
+    </h4>
+    <a *ngIf="project.image?.src" [routerLink]="[project.friendlyId]">
+      <img alt='' 
+       [src]="project.image.src" 
+       [srcset]="project.image.srcset" 
+       sizes="(min-width: 37.5em) 30vw, 48vw" />
+    </a>
+    <div class='tags'>
+      Tags: 
+      <span [innerHTML]="projectTags.activeProjectTags(project)"></span>
+    </div>
+  </div>
+
+</div>

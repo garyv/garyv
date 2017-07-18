@@ -1,0 +1,32 @@
+{
+  "article": {
+    "text": "<h4>Web Developer</h4><p>8 years of professional experience, focusing on front end technology such as Ruby on Rails, JavaScript, HTML5, CSS, along with other related web technology such as MySQL, Ruby, and Linux systems administration. </p>\n<p> He firmly believes in coding software for ease of use, broad accessibility, industry standards and best practices, reusability, and easy maintenance. He enjoys creating elegant solutions to challenging technical problems. </p>\n<p> He's a New Jersey native who started programming in high school, learning basic commands and object oriented design. During college, he took classes related to graphic design, computer programming, and video game development. After a couple internships at web development companies, he decided to focus on front end web coding. After college, he started working for a web design and development company called Juicyorange, where he worked on web properties for many different clients, including Nickelodeon's iCarly, General Mills, and Metallica. </p>\n<p> Gary enjoys living in his new riverside home with his lovely wife and beautiful baby girl, hiking, meditation, jazz, science fiction, and documentaries. He is fascinated by what people have accomplished and will accomplish in the future.</p>",
+    "image": {
+      "alt": "",
+      "src": "//garyv.space/me/portrait_320.jpg",
+      "srcset": "//garyv.space/me/portrait_640.jpg 640w, //garyv.space/me/portrait_320.jpg 320w",
+      "sizes": "(min-width: 37.5em) 640, 98vw"
+    },
+    "asideImage": {
+      "alt": "",
+      "caption": "Holly Von Schilling <br>\n Born 1/11/2017",
+      "src": "//garyv.space/images/family/holly_hello.jpg",
+      "srcset": "//garyv.space/images/family/holly_hello_2x.jpg 612w, //garyv.space/images/family/holly_hello.jpg 306w",
+      "sizes": "(min-width: 37.5em) 640, 98vw",
+      "width": "306px",
+      "link": "https://photos.google.com/share/AF1QipMwXnN5utWf3QoQOleOyHUx6IuOyK80bdoxARpNwdejWK3-ZpX9bHaa19Q1hdnhZA/photo/AF1QipMKSeW_dfPvOAx6sbr_4VIk3W5D0OkUyRuCseIQ?key=WGRpQWwtRExuYkFPRzhKVGt6Y3VCNmcwQVhSZURR"
+    },
+    "buttons": [
+      {
+        "address": "//garyv.space/garyv_resume.pdf",
+        "icon": "file-text",
+        "text": "Download his resumé"
+      },
+      {
+        "address": "https://goo.gl/photos/ApV3UjthBAeuQ1wn7",
+        "icon": "camera",
+        "text": "See his cute baby"
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+@import 'sass-variables';
+
+/* colors */
+a {
+  color: $link-color;
+}
+  a:visited {
+    color: $link-color;
+  }
+  a:hover {
+    color: $link-color-active;
+  }
+
+html {
+  background: #444;
+  color: $main-color;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+}
+
+.background {
+  background-color: $background-color;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,222222+69,444444+90 */
+  background-image: -moz-linear-gradient(top, hsl(0,0%,0%) 0%, hsl(0,0%,13%) 69%, hsl(0,0%,27%) 90%); 
+  background-image: -webkit-linear-gradient(top, hsl(0,0%,0%) 0%,hsl(0,0%,13%) 69%,hsl(0,0%,27%) 90%); 
+  background-image: linear-gradient(to bottom, hsl(0,0%,0%) 0%,hsl(0,0%,13%) 69%,hsl(0,0%,27%) 90%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#444444',GradientType=0 ); /* IE6-9 */
+
+  background-position: fixed;
+
+  position: fixed; 
+  top: 0; bottom: 0px; left: 0; right: 0;
+  z-index: -1;
+}
+
+/* typography */
+body {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  line-height: $line-height; 
+}
+
+h1, h2, h3, h4, h5, nav {
+  font-family: $heading-font;
+  font-weight: normal;
+}
+
+p {
+  font-size: $small-font-size;
+}
+
+/* spacing */
+h1, h2, h3, h4, h5 {
+  margin: $small-space 0 $big-space 0;
+  padding: 0;
+}
+
+.page {
+  padding: $medium-space;
+  margin: 0 auto;
+}
+
+.medium-padding {
+  padding: $medium-space;
+}
+
+.big-margin-bottom {
+  margin-bottom: $big-space;
+}
+
+/* grid */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+.row{zoom:1}
+  .row:before,.row:after{content:"";display:table}.row:after{clear:both}
+  .col{float:left}
+  .half{width:50%}.half:nth-child(odd){clear:left}
+  .fourth{width:25%}.three-fourths{width:75%}.third{width:percentage(1.0 / 3)}
+  .two-thirds{width:percentage(2.0 / 3)} 
+
+/* full size multiple column grid */
+@media all and (min-width: $middle-break-point){
+  $columns: 12;
+  
+  %grid {
+    float: left;
+    &.right {
+      float: right;
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .grid-#{$i} {
+      @extend %grid;
+      width: $i * 100% / $columns;
+    }
+  }
+  .half:nth-child(odd){clear:none}.half:nth-child(3n+1){clear:left}
+}
+
+/* full size spacing */
+@media all and (min-width: $big-break-point) {
+  .page {
+    max-width: 88%;
+  }
+}
+
+/* fade in */
+.fade-in {
+  animation: fade-in 0.4s ease-in-out;
+}
+.fade-in-delay {
+  animation: fade-in-delay 0.4s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to   {opacity: 1}
+}
+
+@keyframes fade-in-delay {
+  0% {opacity: 0}
+  40% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.tags span {
+  border-radius: 1px;
+  display: inline-block;
+  padding: 2px 4px;
+  margin: -2px -4px;
+}
+
+.highlight {
+  animation: fade-out-highlight 4s ease-in-out;
+}
+
+@keyframes fade-out-highlight {
+  0% {background-color: #1d9d73; color: white;}
+  20% {background-color: #1d9d73; color: white;}
+  100% {background-color: inherit; color: inherit;}
+}
+

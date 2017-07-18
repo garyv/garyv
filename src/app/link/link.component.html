@@ -1,0 +1,12 @@
+<div *ngIf="link">
+  <h3 *ngIf="link.title">
+    <a [href]="link.address">
+      {{link.title}}
+      <i *ngIf="link.icon" [class]="'fa fa-' + link.icon"></i>
+    </a>
+  </h3>
+  <a [href]="link.address" [class.button]="!link.title">
+    {{link.text}}
+    <i *ngIf="link.icon && !link.title" [class]="'fa fa-' + link.icon"></i>
+  </a>
+</div>
