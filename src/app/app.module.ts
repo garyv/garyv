@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
+import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { BioComponent } from './bio/bio.component';
 import { BioService } from './bio/bio.service';
@@ -48,7 +49,7 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot(
       routes, 
-      { enableTracing: false }  // <- for debugging // TODO: off in prod mode
+      { enableTracing: !environment['production'] }  
     )
   ],
   providers: [ BioService, ContactsService, FormsModule, ProjectsService ],

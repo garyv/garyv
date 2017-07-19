@@ -9,7 +9,7 @@
         "address": "http://www.shopthelookbook.com/",
         "text": "www.shopthelookbook.com"
       },
-      "text": "<p>This is a clothing website I developed for New York City designer <a href='http://www.stacychang.com/' target='_blank'>Stacy Chang</a>. This uses a fully responsive custom design, coded on the Shopify e-commerse platform.</p>\n<p></p>\n<p>Other e-commerse websites I coded using Shopify are:</p>\n<p><a href='http://swingshopping.com/'>Swing Shopping</a></p>\n<p><a href='http://www.senortyrone.com'>Señor Tyrone</a></p>\n<p><a href='http://shop.drinkslowandlow.com'>Slow and Low</a></p>",
+      "text": "<p>This is a clothing website Gary developed for New York City designer Stacy Chang. This uses many high resolution photos, which load efficiently through a combination of responsive design, lazy loading, and other optimization techniques.</p>",
       "title": "Shop The Lookbook",
       "tags": ["HTML & CSS", "Online Shopping", "JavaScript", "Responsive Design"]
     },
@@ -23,7 +23,7 @@
         "address": "http://www.gameshakers.com",
         "text": "gameshakers.com"
       },
-      "text": "<p>My most recent in a series of websites for Nickelodeon TV shows. I coded a completely responsive front end using Haml and Sass, and a neat ruby framework called Middleman. This site uses image sprites that are dynamically generated using compass from individual images stored in git.</p>\n<p></p>\n<p>Other Nickelodeon show sites which I worked extensively on the front end for include <a href='http://www.icarly.com/'>icarly.com</a>, <a href='http://www.theslap.com'>theslap.com</a>, and <a href='http://www.samandcat.com'>samandcat.com</a>.</p>",
+      "text": "<p>Game Shakers is the most recent in a series of websites Gary helped develop for Nickelodeon TV shows produced by Dan Schneider.</p> <p>Other Nickelodeon show sites Gary worked on extensively include <a href='http://www.icarly.com/'>icarly.com</a>, <a href='http://www.theslap.com/'>theslap.com</a>, and <a href='http://samandcat.nick.com/'>samandcat.com</a>.</p> <p>These websites sometimes experienced extreme volumes of traffic corresponding to TV broadcasts. Keeping 100% uptime required careful architectural planning, caching, and utilizing content delivery networks. </p> <p>Some interesting parts of the Nickelodeon sites that Gary coded are custom video players, music players, an avatar creator, and a variety of kid-friendly animations and widgets.</p>",
       "tags": ["HTML & CSS", "JavaScript", "Ruby on Rails", "Full Stack", "Responsive Design", "MySQL", "Sass"]
     },
     {
@@ -33,10 +33,10 @@
         "srcset": "//garyv.space/images/projects/metallica_400.png 400w, //garyv.space/images/projects/metallica_800.png 800w"
       },
       "link": {
-        "address": "http://garyv.space/metallica/en.html",
-        "text": "garyv.space/metallica/en.html"
+        "address": "http://garyv.space/metallica/",
+        "text": "garyv.space/metallica/"
       },
-      "text": "<p>The quintessential heavy metal band Metallica released their full music catalog for web streaming in December of 2012, after years of boycotting internet music. At the time, I worked with <a href='https://www.spotify.com/' target='_blank'>Spotify</a> to code this promotional page to exhibit Metallica's complete catalog, that was linked to on Spotify's homepage. </p>\n<p> I later coded another <a href='http://garyv.space/metallica/soundtrack/index.html'>Metallica Spotify promotion page</a> to promote the movie and soundtrack release of <em>Metallica: Through The Never</em></p>",
+      "text": "<p>Gary worked with the music streaming company <a href='https://www.spotify.com/'>Spotify</a> to code a series of promotional pages to exhibit all of Metallica's albums when they were first released for web streaming. These were featured on the Spotify app's home screen. </p>",
       "tags": ["HTML & CSS", "Sass", "JavaScript"]
     },
     {
@@ -49,7 +49,7 @@
         "address": "http://www.ventucom.com/",
         "text": "www.ventucom.com"
       },
-      "text": "<p>One of my first Ruby on Rails sites with a custom content management system (CMS). It has semi-responsive design (big deal in 2012), and the contact page has some simple & effective spam protection.</p>\n<p>Another website I coded in Ruby on Rails is <a href='http://www.livewirefarm.com/'>Live Wire Farm</a></p>",
+      "text": "<p>This is a database backed website Gary developed for a great IT company in New York City. It has a custom content management system that makes it simple to update all text and images on the website. The contact page has spam prevention code that is both very effective and user friendly.</p> <p>Another website with content management Gary has made is <a href='http://www.livewirefarm.com/'>Live Wire Farm</a>. </p>",
       "tags": ["HTML & CSS", "Ruby on Rails", "JavaScript", "MySQL", "Sass", "Full Stack"]
     }, 
     {
@@ -62,7 +62,7 @@
         "address": "http://www.senortyrone.com/",
         "text": "www.senortyrone.com"
       },
-      "text": "This is a Shopify e-commerse website. It's based a template that I customized to fill the client's needs.",
+      "text": "<p>This is an e-commerse website based a template that Gary customized to fit the client's needs.</p>",
       "tags": ["HTML & CSS", "JavaScript", "Online Shopping", "Responsive Design"]
     },
     {
@@ -75,7 +75,7 @@
         "address": "http://www.garyanddana.us/wedding.php",
         "text": "www.garyanddana.us"
       },
-      "text": "A personal website I built for my 2014 wedding. It was initially used for guests RSVPs and information. </p>\n<p>Afterwards, the site was transitioned to share wedding photos, music and video, and baby photos.",
+      "text": "<p>A personal website Gary built for his wedding. It was initially used for guest RSVPs and information.</p> <p>Afterwards, the site was transitioned to share wedding photos, music and video, and later baby photos.</p>",
       "tags": ["HTML & CSS", "JavaScript", "PHP", "MySQL", "Responsive Design", "Full Stack"]
     }
   ]

@@ -1,6 +1,6 @@
 @import 'sass-variables';
 
-/* colors */
+// colors 
 a {
   color: $link-color;
 }
@@ -27,13 +27,12 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#444444',GradientType=0 ); /* IE6-9 */
 
   background-position: fixed;
-
   position: fixed; 
   top: 0; bottom: 0px; left: 0; right: 0;
   z-index: -1;
 }
 
-/* typography */
+// typography
 body {
   font-family: $main-font;
   font-size: $main-font-size;
@@ -49,7 +48,7 @@ p {
   font-size: $small-font-size;
 }
 
-/* spacing */
+// spacing
 h1, h2, h3, h4, h5 {
   margin: $small-space 0 $big-space 0;
   padding: 0;
@@ -68,7 +67,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: $big-space;
 }
 
-/* grid */
+// grid
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 .row{zoom:1}
   .row:before,.row:after{content:"";display:table}.row:after{clear:both}
@@ -77,7 +76,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
   .fourth{width:25%}.three-fourths{width:75%}.third{width:percentage(1.0 / 3)}
   .two-thirds{width:percentage(2.0 / 3)} 
 
-/* full size multiple column grid */
+// full size multiple column grid
 @media all and (min-width: $middle-break-point){
   $columns: 12;
   
@@ -97,14 +96,14 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
   .half:nth-child(odd){clear:none}.half:nth-child(3n+1){clear:left}
 }
 
-/* full size spacing */
+// full size spacing 
 @media all and (min-width: $big-break-point) {
   .page {
     max-width: 88%;
   }
 }
 
-/* fade in */
+// fade animations
 .fade-in {
   animation: fade-in 0.4s ease-in-out;
 }
@@ -123,20 +122,13 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
   100% {opacity: 1}
 }
 
-.tags span {
-  border-radius: 1px;
-  display: inline-block;
-  padding: 2px 4px;
-  margin: -2px -4px;
-}
-
 .highlight {
   animation: fade-out-highlight 4s ease-in-out;
 }
 
 @keyframes fade-out-highlight {
-  0% {background-color: #1d9d73; color: white;}
-  20% {background-color: #1d9d73; color: white;}
+  0% {background-color: $highlight-color; color: $main-color;}
+  20% {background-color: $highlight-color; color: $main-color;}
   100% {background-color: inherit; color: inherit;}
 }
 
