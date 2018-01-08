@@ -24,7 +24,9 @@ const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full'},
   { path: 'about', component: BioComponent },
   { path: 'work', component: ProjectsComponent },
+  { path: 'work/tags/:tags', component: ProjectsComponent },
   { path: 'work/:friendly-id', component: ProjectComponent },
+  { path: 'work/tags/:tags/:friendly-id', component: ProjectComponent },
   { path: 'contact', component: ContactComponent },
 
   { path: '**', component: MissingComponent }

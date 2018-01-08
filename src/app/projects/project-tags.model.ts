@@ -10,27 +10,46 @@ export class ProjectTags {
   tags: string[] = [];
   activeTags: string[] = [];
   activeProjects: Project[] = [];
+  tagsInitialized: boolean = false;
   @Input() highlightTag: string;
-
-  constructor() { 
-    this.activeTags = JSON.parse(StateService.get(storageKey));
-    if (!this.activeTags || !this.activeTags.length) {
-      this.activeTags = defaultTags; 
-    }
-  }
 
   isActive(tag:string):boolean {
     return this.activeTags.indexOf(tag) != -1;
   }
 
   populateTags(projects:Project[]):void {
+    if (!projects.length) { return; }
+    let tags = [];
+    for (let project of projects) {
+      project.active = false;
+      for (let tag of project.tags) {
+        if (tags.indexOf(tag) == -1) {
+          tags.push(tag);
+        }
+      }
+    }
+    this.tags = tags.sort();
+    this.activateProjects(projects);
+    StateService.set(storageKey, JSON.stringify(this.activeTags));
+  }
+
+  activateProjects(projects:Project[]):void {
+    if (!this.tagsInitialized) {
+      if (!this.activeTags.length) {
+        this.activeTags = this.tagsFromUrl();
+      } 
+      if (!this.activeTags.length) {
+        this.activeTags = JSON.parse(StateService.get(storageKey));
+      }
+      if (!this.activeTags.length) {
+        this.activeTags = defaultTags; 
+      }
+      this.tagsInitialized = true;
+    }
     this.activeProjects = [];
     for (let project of projects) {
       project.active = false;
       for (let tag of project.tags) {
-        if (this.tags.indexOf(tag) == -1) {
-          this.tags.push(tag);
-        }
         if (!project.active && this.activeTags.indexOf(tag) != -1) {
           project.active = true;
         }
@@ -39,8 +58,14 @@ export class ProjectTags {
         this.activeProjects.push(project);
       }
     }
-    this.tags = this.tags.sort();
-    StateService.set(storageKey, JSON.stringify(this.activeTags));
+  }
+
+  tagsFromUrl() {
+    let urlParts = location.href.split(/\/tags\//);
+    if (urlParts.length < 2) { return []; }
+    let tagsList = urlParts[1].split(/\//)[0].split(/\W+/).join('|');
+    let tagPattern = new RegExp(`^(${ tagsList })`, 'i');
+    return this.tags.filter((tag) => tag.match(tagPattern));
   }
 
   toggleTag(tag:string, projects:Project[]):void {
