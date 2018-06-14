@@ -2,29 +2,29 @@
   "projects": [
     {
       "image": {
+        "src": "//garyv.space/images/projects/ripen_400.png",
+        "srcset": "//garyv.space/images/projects/ripen_400.png 400w, //garyv.space/images/projects/ripen_800.png 800w, //garyv.space/images/projects/ripen_1018.png 1018w"
+      },
+      "link": {
+        "address": "https://ripen.com/",
+        "text": "ripen.com"
+      },
+      "text": "<p>Lead rebuild ecommerse service website using HTML5 video, ES6 JavaScript, CSS animations, and responsive web design</p>",
+      "title": "Ripen",
+      "tags": ["HTML & CSS", "Sass", "JavaScript", "Responsive Design"]
+    },
+    {
+      "image": {
         "src": "//garyv.space/images/projects/look_book_400.png",
         "srcset": "//garyv.space/images/projects/look_book_400.png 400w, //garyv.space/images/projects/look_book_800.png 800w"
       },
       "link": {
-        "address": "http://www.shopthelookbook.com/",
+        "address": "https://www.shopthelookbook.com/",
         "text": "www.shopthelookbook.com"
       },
       "text": "<p>This is a clothing website Gary developed for New York City designer Stacy Chang. This uses many high resolution photos, which load efficiently through a combination of responsive design, lazy loading, and other optimization techniques.</p>",
       "title": "Shop The Lookbook",
       "tags": ["HTML & CSS", "Online Shopping", "JavaScript", "Responsive Design"]
-    },
-    {
-      "title": "Game Shakers",
-      "image": {
-        "src": "//garyv.space/images/projects/game_shakers_400.png",
-        "srcset": "//garyv.space/images/projects/game_shakers_400.png 400w, //garyv.space/images/projects/game_shakers_800.png 800w"
-      },
-      "link": {
-        "address": "http://www.gameshakers.com",
-        "text": "gameshakers.com"
-      },
-      "text": "<p>Game Shakers is the most recent in a series of websites Gary helped develop for Nickelodeon TV shows produced by Dan Schneider.</p> <p>Other Nickelodeon show sites Gary worked on extensively include <a href='http://www.icarly.com/'>icarly.com</a>, <a href='http://www.theslap.com/'>theslap.com</a>, and <a href='http://samandcat.nick.com/'>samandcat.com</a>.</p> <p>These websites sometimes experienced extreme volumes of traffic corresponding to TV broadcasts. Keeping 100% uptime required careful architectural planning, caching, and utilizing content delivery networks. </p> <p>Some interesting parts of the Nickelodeon sites that Gary coded are custom video players, music players, an avatar creator, and a variety of kid-friendly animations and widgets.</p>",
-      "tags": ["HTML & CSS", "JavaScript", "Ruby on Rails", "Full Stack", "Responsive Design", "MySQL", "Sass"]
     },
     {
       "title": "Metallica on Spotify",
@@ -39,19 +39,6 @@
       "text": "<p>Gary worked with the music streaming company <a href='https://www.spotify.com/'>Spotify</a> to code a series of promotional pages to exhibit all of Metallica's albums when they were first released for web streaming. These were featured on the Spotify app's home screen. </p>",
       "tags": ["HTML & CSS", "Sass", "JavaScript"]
     },
-    {
-      "title": "Ventucom",
-      "image": {
-        "src": "//garyv.space/images/projects/ventucom_400.png",
-        "srcset": "//garyv.space/images/projects/ventucom_400.png 400w, //garyv.space/images/projects/ventucom_800.png 800w"
-      },
-      "link": {
-        "address": "http://www.ventucom.com/",
-        "text": "www.ventucom.com"
-      },
-      "text": "<p>This is a database backed website Gary developed for a great IT company in New York City. It has a custom content management system that makes it simple to update all text and images on the website. The contact page has spam prevention code that is both very effective and user friendly.</p> <p>Another website with content management Gary has made is <a href='http://www.livewirefarm.com/'>Live Wire Farm</a>. </p>",
-      "tags": ["HTML & CSS", "Ruby on Rails", "JavaScript", "MySQL", "Sass", "Full Stack"]
-    }, 
     {
       "title": "Señor Tyrone",
       "image": {
