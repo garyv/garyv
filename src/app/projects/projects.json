@@ -9,7 +9,7 @@
         "address": "https://ripen.com/",
         "text": "ripen.com"
       },
-      "text": "<p>Lead rebuild ecommerse service website using HTML5 video, ES6 JavaScript, CSS animations, and responsive web design</p>",
+      "text": "<p>Lead front end rebuild of ecommerse services website using HTML5 video, ES6 JavaScript, CSS animations, and responsive web design.</p>",
       "title": "Ripen",
       "tags": ["HTML & CSS", "Sass", "JavaScript", "Responsive Design"]
     },
@@ -64,6 +64,32 @@
       },
       "text": "<p>A personal website Gary built for his wedding. It was initially used for guest RSVPs and information.</p> <p>Afterwards, the site was transitioned to share wedding photos, music and video, and later baby photos.</p>",
       "tags": ["HTML & CSS", "JavaScript", "PHP", "MySQL", "Responsive Design", "Full Stack"]
+    },
+    {
+      "title": "iCarly",
+      "image": {
+        "src": "//garyv.space/images/projects/icarly_800.jpg",
+        "srcset": "//garyv.space/images/projects/icarly_1200.jpg 1200w, //garyv.space/images/projects/icarly_800.jpg 800w, //garyv.space/images/projects/icarly_400.jpg 400w"
+      },
+      "link": {
+        "address": "http://icarly.wikia.com/wiki/ICarly.com#Real_World",
+        "text": "icarly.com"
+      },
+      "text": "<p>iCarly.com is the first of a series of websites Gary helped develop for Nickelodeon TV shows produced by Dan Schneider.</p> <p>Other Nickelodeon show sites Gary worked on extensively Victorious, Sam And Cat, and Game Shakers.</p> <p>These websites sometimes experienced extreme volumes of traffic corresponding to TV broadcasts. Keeping 100% uptime required careful architectural planning, caching, and utilizing content delivery networks. </p> <p>Some interesting parts of the Nickelodeon sites that Gary coded are custom video players, music players, an avatar creator, and a variety of kid-friendly animations and widgets.</p>",
+      "tags": ["HTML & CSS", "JavaScript", "Ruby on Rails", "Full Stack", "Responsive Design", "MySQL", "Sass"]
+    },
+    {
+      "title": "Varsity Tutors",
+      "image": {
+        "src": "//garyv.space/images/projects/varsity_640.png",
+        "srcset": "//garyv.space/images/projects/varsity_1200.png 1200w, //garyv.space/images/projects/varsity_640.png 640w, //garyv.space/images/projects/varsity_400.png 400w"
+      },
+      "link": {
+        "address": "https://www.varsitytutors.com/",
+        "text": "varsitytutors.com"
+      },
+      "text": "<p>Varsity Tutors is an online learning platform and nationwide network of tutors. I worked with a remote team of developers updating their Rails applications including a rebuild of their customer payment page, adding content management features, and writing extensive unit tests. </p>",
+      "tags": ["HTML & CSS", "JavaScript", "Ruby on Rails", "Full Stack", "Online Shopping", "Responsive Design", "MySQL", "Sass"]
     }
   ]
 }

@@ -37,12 +37,12 @@ export class ProjectTags {
     if (!this.tagsInitialized) {
       if (!this.activeTags.length) {
         this.activeTags = this.tagsFromUrl();
-      } 
-      if (!this.activeTags.length) {
-        this.activeTags = JSON.parse(StateService.get(storageKey));
       }
       if (!this.activeTags.length) {
-        this.activeTags = defaultTags; 
+        this.activeTags = JSON.parse(StateService.get(storageKey)) || [];
+      }
+      if (!this.activeTags.length) {
+        this.activeTags = defaultTags;
       }
       this.tagsInitialized = true;
     }
